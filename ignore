@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+DIRNAME=$(dirname $0)
+
+if [ ! -f $DIRNAME/../.gitignore ] || ! egrep -q "^/Makefile$" $DIRNAME/../.gitignore
+then
+    echo "/Makefile" >> $DIRNAME/../.gitignore
+fi
+
