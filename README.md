@@ -21,3 +21,7 @@ and commit again.
 
 The name `spin` can be chosen at will -- the scripts work for any directory
 name that does not contain spaces.
+
+---------
+
+Licensed under [GPL v3](http://www.gnu.org/copyleft/gpl.html).
