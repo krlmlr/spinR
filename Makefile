@@ -9,5 +9,5 @@ ${SPIN}/%.tex: ${SPIN}/%.md
 	pandoc --include-in-header=${SPIN}/header.tex -s -o $@ $<
 
 %.pdf: ${SPIN}/%.tex
-	latexmk -pdf -output-directory=${SPIN} $<
+	latexmk -pdf -output-directory=${SPIN} -interaction=nonstopmode $<
 	cp -u ${SPIN}/$@ .
