@@ -5,4 +5,4 @@ inline.hook.xspace <- function(...) { paste0(knitr:::.inline.hook.tex(...), '\\x
 knit_hooks$set(inline=inline.hook.xspace)
 stopifnot(length(commandArgs(TRUE)) == 2)
 setwd(commandArgs(TRUE)[2])
-spin(file.path("..", commandArgs(TRUE)[1]), report=F)
+spin(file.path("..", commandArgs(TRUE)[1]), report=F, precious=T)
